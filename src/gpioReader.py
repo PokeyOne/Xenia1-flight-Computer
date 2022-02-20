@@ -57,7 +57,8 @@ class GPIOReader():
         float
             The position of the airbrakes normalised between 0.0 and 1.0
         """
-        # TODO: !MC - Implement this
+        # TODO: !MC - I don't know enough about the input of the potentiometer
+        #       yet to do this rn.
         pass
 
 
