@@ -19,7 +19,7 @@ class GPIOReader():
         print("Humidity: %0.1f %%" % __bme280.humidity)
         print("Pressure: %0.1f hPa" % __bme280.pressure)
 
-    
+
     def __readLSM9DS1(self):
         ## TODO: Store Values in CSV file for external use ##
         print("Acceleration (m/s^2): ({0:0.3f}, {1:0.3f}, {2:0.3f})".format(*__lsm9ds1.Acceleration))
@@ -30,7 +30,6 @@ class GPIOReader():
 
     ## Private Method for setting up variables and inputs on pins
     def __setup(self):
-
         print("Initializing Board Setup.....")
 
         i2c = board.I2C() ## Uses board.SCL and board.SDA
@@ -45,10 +44,22 @@ class GPIOReader():
         __readLSM8DS1()
 
 
-    def __init__(self):
+    def readAirBrakeCurrentValue():
+        """
+        Read the current position of the airbrakes.
 
+        The current position of the brakes is measured by an 10-bit integer
+        from 0 (inclusive) to 1024 (exclusive). This method will read the input,
+        and then return a float normalized between 0.0 and 1.0.
+
+        Returns
+        -------
+        float
+            The position of the airbrakes normalised between 0.0 and 1.0
+        """
+        pass
+
+
+    def __init__(self):
         ## INITIALIZE PINS
         setup()
-
-    
-    
