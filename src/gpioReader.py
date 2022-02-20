@@ -19,7 +19,7 @@ class GPIOReader():
         print("Humidity: %0.1f %%" % __bme280.humidity)
         print("Pressure: %0.1f hPa" % __bme280.pressure)
 
-    
+
     def __readLSM9DS1(self):
         ## TODO: Store Values in CSV file for external use ##
         print("Acceleration (m/s^2): ({0:0.3f}, {1:0.3f}, {2:0.3f})".format(*__lsm9ds1.Acceleration))
@@ -49,6 +49,3 @@ class GPIOReader():
 
         ## INITIALIZE PINS
         setup()
-
-    
-    

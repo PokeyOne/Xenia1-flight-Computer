@@ -3,4 +3,3 @@
 class KalmanFilter:
   def __init__(self, rd):
     rocket_data = rd
-    
