@@ -44,7 +44,7 @@ class GPIOReader():
         __readLSM8DS1()
 
 
-    def readAirBrakeCurrentValue():
+    def readAirBrakeCurrentPosition():
         """
         Read the current position of the airbrakes.
 
@@ -57,6 +57,7 @@ class GPIOReader():
         float
             The position of the airbrakes normalised between 0.0 and 1.0
         """
+        # TODO: !MC - Implement this
         pass
 
 
